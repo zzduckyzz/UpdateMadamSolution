@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace eShopSolution.WebApp.Controllers.Components
+namespace MadamSolution.WebApp.Controllers.Components
 {
     public class SideBarViewComponent : ViewComponent
     {
