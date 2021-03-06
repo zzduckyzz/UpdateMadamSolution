@@ -10,6 +10,7 @@
     <None Include="Views\Login\Index.cshtml" />
     <None Include="Views\Product\CategoryAssign.cshtml" />
     <None Include="Views\Product\Create.cshtml" />
+    <None Include="Views\Product\Edit.cshtml" />
     <None Include="Views\Product\Index.cshtml" />
     <None Include="Views\Shared\Components\Navigation\Default.cshtml" />
     <None Include="Views\Shared\Components\Pager\Default.cshtml" />
@@ -24,6 +25,12 @@
     <None Include="Views\User\RoleAssign.cshtml" />
     <None Include="Views\_ViewImports.cshtml" />
     <None Include="Views\_ViewStart.cshtml" />
+    <None Include="wwwroot\assets\demo\chart-area-demo.js" />
+    <None Include="wwwroot\assets\demo\chart-bar-demo.js" />
+    <None Include="wwwroot\assets\demo\chart-pie-demo.js" />
+    <None Include="wwwroot\assets\demo\datatables-demo.js" />
+    <None Include="wwwroot\assets\img\error-404-monochrome.svg" />
+    <None Include="wwwroot\js\scripts.js" />
   </ItemGroup>
 
   <ItemGroup>

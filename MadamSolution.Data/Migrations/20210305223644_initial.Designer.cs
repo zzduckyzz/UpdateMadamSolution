@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MadamSolution.Data.Migrations
 {
     [DbContext(typeof(MadamDbContext))]
-    [Migration("20210305210905_initial")]
+    [Migration("20210305223644_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,7 +78,7 @@ namespace MadamSolution.Data.Migrations
                         new
                         {
                             Id = new Guid("223f4c1d-fa90-4c3e-9bee-6d29c7be76a8"),
-                            ConcurrencyStamp = "2bf2fb32-9232-4102-8be9-a197cdf146eb",
+                            ConcurrencyStamp = "4539da15-0953-42a3-bd8c-03b3c8dc8c3c",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -151,7 +151,7 @@ namespace MadamSolution.Data.Migrations
                         {
                             Id = new Guid("a0381e29-f86d-4377-8661-8186912b8fe9"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "db2de2e3-6446-4e33-984f-12e119685aa3",
+                            ConcurrencyStamp = "007a2e1b-e6c0-4880-9d2b-1d64777a2420",
                             Dob = new DateTime(2021, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "duc.phamminh94@gmail.com",
                             EmailConfirmed = true,
@@ -160,7 +160,7 @@ namespace MadamSolution.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "duc.phamminh94@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAENzTTaqV2Yc9cfZnNpwvUtBd8Cs24nxpji0G3rtySCGEWuqsDduGUgsQLfsEOeIk0w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGTTVtwF3+FCaWpsGVW2lRH6meJ+j0Pjw4AwYLhJx/umHNllu4TErvTQ6q/Ja7nQTQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -309,68 +309,68 @@ namespace MadamSolution.Data.Migrations
                             Id = 1,
                             CategoryId = 1,
                             LanguageId = "vi",
-                            Name = "Áo Blazer",
-                            SeoAlias = "ao-blazer",
-                            SeoDescription = "blazer nữ",
-                            SeoTitle = "blazer nữ"
+                            Name = "Áo Phông",
+                            SeoAlias = "ao-phong",
+                            SeoDescription = "Áo Phông",
+                            SeoTitle = "Áo Phông"
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 1,
                             LanguageId = "en",
-                            Name = "Women Blazer",
-                            SeoAlias = "women-blazer",
-                            SeoDescription = "blazer for women",
-                            SeoTitle = "blazer for women"
+                            Name = "Women T-Shirt",
+                            SeoAlias = "Women T-Shirt",
+                            SeoDescription = "Women T-Shirt",
+                            SeoTitle = "Women T-Shirt"
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 2,
                             LanguageId = "vi",
-                            Name = "Áo phông nữ",
-                            SeoAlias = "ao-phong-nu",
-                            SeoDescription = "áo phông cho nữ",
-                            SeoTitle = "áo phông cho nữ"
+                            Name = "Áo nỉ",
+                            SeoAlias = "ao-ni",
+                            SeoDescription = "Áo nỉ chui đầu",
+                            SeoTitle = "Áo nỉ chui đầu"
                         },
                         new
                         {
                             Id = 4,
                             CategoryId = 2,
                             LanguageId = "en",
-                            Name = "Women T-Shirt",
-                            SeoAlias = "women-Tshirt",
-                            SeoDescription = "The Tshirt products for women",
-                            SeoTitle = "The Tshirt products for women"
+                            Name = "Women Hoodie",
+                            SeoAlias = "Women Hoodie",
+                            SeoDescription = "The hoodie products for women",
+                            SeoTitle = "The hoodie products for women"
                         },
                         new
                         {
                             Id = 5,
                             CategoryId = 3,
                             LanguageId = "vi",
-                            Name = "Áo Blazer",
-                            SeoAlias = "ao-blazer",
-                            SeoDescription = "blazer nữ",
-                            SeoTitle = "blazer nữ"
+                            Name = "Áo len",
+                            SeoAlias = "ao-len",
+                            SeoDescription = "Áo len",
+                            SeoTitle = "Áo len"
                         },
                         new
                         {
                             Id = 6,
                             CategoryId = 3,
                             LanguageId = "en",
-                            Name = "Áo Blazer",
-                            SeoAlias = "ao-blazer",
-                            SeoDescription = "blazer nữ",
-                            SeoTitle = "blazer nữ"
+                            Name = "Women Sweater",
+                            SeoAlias = "women-Sweater",
+                            SeoDescription = "Women Sweater",
+                            SeoTitle = "Women Sweater"
                         },
                         new
                         {
                             Id = 7,
                             CategoryId = 4,
                             LanguageId = "vi",
-                            Name = "Áo Blazer",
-                            SeoAlias = "ao-blazer",
+                            Name = "Áo sơ mi",
+                            SeoAlias = "ao-so-mi",
                             SeoDescription = "blazer nữ",
                             SeoTitle = "blazer nữ"
                         },
@@ -379,10 +379,10 @@ namespace MadamSolution.Data.Migrations
                             Id = 8,
                             CategoryId = 4,
                             LanguageId = "en",
-                            Name = "Áo Blazer",
-                            SeoAlias = "ao-blazer",
-                            SeoDescription = "blazer nữ",
-                            SeoTitle = "blazer nữ"
+                            Name = "Women T-Shirt",
+                            SeoAlias = "TShirt-women",
+                            SeoDescription = "Women T-Shirt",
+                            SeoTitle = "Women T-Shirt"
                         });
                 });
 
@@ -565,10 +565,10 @@ namespace MadamSolution.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2021, 3, 6, 4, 9, 5, 234, DateTimeKind.Local).AddTicks(2422),
+                            DateCreated = new DateTime(2021, 3, 6, 5, 36, 43, 530, DateTimeKind.Local).AddTicks(8036),
                             OriginalPrice = 100000m,
                             Price = 200000m,
-                            Stock = 0,
+                            Stock = 1,
                             ViewCount = 0
                         });
                 });

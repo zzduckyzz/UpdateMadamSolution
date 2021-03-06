@@ -491,13 +491,13 @@ namespace MadamSolution.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "DateCreated", "IsFeatured", "OriginalPrice", "Price", "SeoAlias" },
-                values: new object[] { 1, new DateTime(2021, 3, 6, 4, 9, 5, 234, DateTimeKind.Local).AddTicks(2422), null, 100000m, 200000m, null });
+                columns: new[] { "Id", "DateCreated", "IsFeatured", "OriginalPrice", "Price", "SeoAlias", "Stock" },
+                values: new object[] { 1, new DateTime(2021, 3, 6, 5, 36, 43, 530, DateTimeKind.Local).AddTicks(8036), null, 100000m, 200000m, null, 1 });
 
             migrationBuilder.InsertData(
                 table: "Roles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
-                values: new object[] { new Guid("223f4c1d-fa90-4c3e-9bee-6d29c7be76a8"), "2bf2fb32-9232-4102-8be9-a197cdf146eb", "Administrator role", "admin", "admin" });
+                values: new object[] { new Guid("223f4c1d-fa90-4c3e-9bee-6d29c7be76a8"), "4539da15-0953-42a3-bd8c-03b3c8dc8c3c", "Administrator role", "admin", "admin" });
 
             migrationBuilder.InsertData(
                 table: "Slides",
@@ -515,21 +515,21 @@ namespace MadamSolution.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Dob", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { new Guid("a0381e29-f86d-4377-8661-8186912b8fe9"), 0, "db2de2e3-6446-4e33-984f-12e119685aa3", new DateTime(2021, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "duc.phamminh94@gmail.com", true, "Duc", "Pham", false, null, "duc.phamminh94@gmail.com", "admin", "AQAAAAEAACcQAAAAENzTTaqV2Yc9cfZnNpwvUtBd8Cs24nxpji0G3rtySCGEWuqsDduGUgsQLfsEOeIk0w==", null, false, "", false, "admin" });
+                values: new object[] { new Guid("a0381e29-f86d-4377-8661-8186912b8fe9"), 0, "007a2e1b-e6c0-4880-9d2b-1d64777a2420", new DateTime(2021, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "duc.phamminh94@gmail.com", true, "Duc", "Pham", false, null, "duc.phamminh94@gmail.com", "admin", "AQAAAAEAACcQAAAAEGTTVtwF3+FCaWpsGVW2lRH6meJ+j0Pjw4AwYLhJx/umHNllu4TErvTQ6q/Ja7nQTQ==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "CategoryTranslations",
                 columns: new[] { "Id", "CategoryId", "LanguageId", "Name", "SeoAlias", "SeoDescription", "SeoTitle" },
                 values: new object[,]
                 {
-                    { 1, 1, "vi", "Áo Blazer", "ao-blazer", "blazer nữ", "blazer nữ" },
-                    { 3, 2, "vi", "Áo phông nữ", "ao-phong-nu", "áo phông cho nữ", "áo phông cho nữ" },
-                    { 5, 3, "vi", "Áo Blazer", "ao-blazer", "blazer nữ", "blazer nữ" },
-                    { 7, 4, "vi", "Áo Blazer", "ao-blazer", "blazer nữ", "blazer nữ" },
-                    { 2, 1, "en", "Women Blazer", "women-blazer", "blazer for women", "blazer for women" },
-                    { 4, 2, "en", "Women T-Shirt", "women-Tshirt", "The Tshirt products for women", "The Tshirt products for women" },
-                    { 6, 3, "en", "Áo Blazer", "ao-blazer", "blazer nữ", "blazer nữ" },
-                    { 8, 4, "en", "Áo Blazer", "ao-blazer", "blazer nữ", "blazer nữ" }
+                    { 1, 1, "vi", "Áo Phông", "ao-phong", "Áo Phông", "Áo Phông" },
+                    { 3, 2, "vi", "Áo nỉ", "ao-ni", "Áo nỉ chui đầu", "Áo nỉ chui đầu" },
+                    { 5, 3, "vi", "Áo len", "ao-len", "Áo len", "Áo len" },
+                    { 7, 4, "vi", "Áo sơ mi", "ao-so-mi", "blazer nữ", "blazer nữ" },
+                    { 2, 1, "en", "Women T-Shirt", "Women T-Shirt", "Women T-Shirt", "Women T-Shirt" },
+                    { 4, 2, "en", "Women Hoodie", "Women Hoodie", "The hoodie products for women", "The hoodie products for women" },
+                    { 6, 3, "en", "Women Sweater", "women-Sweater", "Women Sweater", "Women Sweater" },
+                    { 8, 4, "en", "Women T-Shirt", "TShirt-women", "Women T-Shirt", "Women T-Shirt" }
                 });
 
             migrationBuilder.InsertData(
